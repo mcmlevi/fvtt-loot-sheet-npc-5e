@@ -1,6 +1,6 @@
 [![Github All Releases](https://img.shields.io/github/downloads/jopeek/fvtt-loot-sheet-npc-5e/total.svg)]() [![Donate](https://img.shields.io/badge/Donate-BuyMeACoffee-green.svg)](https://www.buymeacoffee.com/ChalkOne)
 > [!CAUTION]
-> This module is currently not maintained. It is partially functional with the dnd5e v3.x system for FoundryVTT v11, but not fully. I just don't have the time at the moment. If this changes, this README will be updated. I will also happily accept pull requests and contributions.
+> This module is currently not maintained. It is partially functional with the dnd5e v3.x system for FoundryVTT v11, but not fully. I just don't have the time to keep up with the constant breaking changes in the 5e system. It's exhausting. If this changes, this README will be updated. I will also happily accept pull requests and contributions.
 # Loot Sheet NPC 5E
 
 This module adds an additional NPC sheet which can be used for loot containers such as chests or merchants in your game. It has a permission system that allows observers to make loot or ourchase actions which will automatically process the item transaction, including inventory moves and currency changes. 
