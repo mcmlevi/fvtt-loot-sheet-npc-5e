@@ -161,10 +161,15 @@ class LootSheet5eNPC extends dnd5e.applications.actor.ActorSheet5eNPC {
     }
     let totalWeight = 0;
     this.actor.items.contents.forEach((item) => {
-      let weight = Math.round(
-        (item.system.quantity * item.system.weight.value * 100) / 100
-      );
-      totalWeight += isNaN(weight) ? 0 : weight;
+      try {
+        let weight = Math.round(
+          (item.system.quantity * item.system.weight.value * 100) / 100
+        );
+        totalWeight += isNaN(weight) ? 0 : weight;
+      } catch (error) {
+        console.error("An error occurred while calculating weight:", error);
+        totalWeight += 0;
+      }
     });
 
     if (game.settings.get("lootsheet-simple", "includeCurrencyWeight")) {
